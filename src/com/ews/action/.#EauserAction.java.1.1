@@ -1,0 +1,70 @@
+package com.ews.action;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts2.interceptor.ServletRequestAware;
+import org.apache.struts2.interceptor.ServletResponseAware;
+
+import com.ews.bean.Ealog;
+import com.ews.bean.Eauser;
+import com.ews.service.IEalogService;
+import com.ews.service.IEauserService;
+import com.opensymphony.xwork2.ActionSupport;
+
+
+public class EauserAction extends ActionSupport implements ServletRequestAware,ServletResponseAware
+ {
+	HttpServletResponse response;	
+	HttpServletRequest request;	
+	public HttpServletRequest getRequest() {
+		return request;
+	}
+	public void setRequest(HttpServletRequest request) {
+		this.request = request;
+	}
+	public IEauserService getEauserService() {
+		return eauserService;
+	}
+	public void setEauserService(IEauserService eauserService) {
+		this.eauserService = eauserService;
+	}
+	public Eauser getEauser() {
+		return eauser;
+	}
+	public void setEauser(Eauser eauser) {
+		this.eauser = eauser;
+	}
+	private IEauserService eauserService;
+	private Eauser eauser;
+	public void setServletRequest(HttpServletRequest arg0) {
+		// TODO Auto-generated method stub
+		this.request = arg0;
+	}
+
+	public String login(){
+		System.out.println("ok");
+		eauser = (Eauser)eauserService.find(Eauser.class, 1);
+		System.out.print(eauser.getAname());
+		try {
+			PrintWriter pw = ((ServletResponse) response).getWriter();
+			pw.print("{success:true,msg:'ok'}");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+		//return "succ";
+	}
+	public void setServletResponse(HttpServletResponse arg0) {
+		// TODO Auto-generated method stub
+		this.response = arg0;
+	}
+	
+
+}

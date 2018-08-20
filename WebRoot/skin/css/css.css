@@ -1,0 +1,5 @@
+body{margin:0px auto;width:900px; font-size:14px;}
+table,tr,td,div,span{font-size:14px;}
+form,select,input,submit,img{padding:0;margin:0;border:0}
+a{font-size: 14px;color:#000000;text-decoration:none;}
+a:hover{font-size: 14px;color:#ff0000;text-decoration:underline;}

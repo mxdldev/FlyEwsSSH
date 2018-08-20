@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="main" extends="struts-default">
+		<action name="*Eauser" class="eauserAction"	method="{1}">		
+			<result name="succ">/ewssite/succ.jsp</result>						
+		</action>
+		<action name="*Tree" class="treeAction"	method="{1}">	
+		</action>	
+		<action name="*Ealog" class="ealogAction"	method="{1}">		
+			<result name="list" type="redirectAction">listTbpaper.action</result>
+			<result name="listback">/listTbpaper.jsp</result>
+			<result name="update">/updateTbpaper.jsp</result>				
+		</action>
+		<action name="*Emroot" class="emrootAction"	method="{1}">		
+			<result name="add">/ewssite/system/addmroot.jsp</result>
+			<result name="list" type="redirectAction">listEmroot.action</result>
+			<result name="listback">/ewssite/system/listmroot.jsp</result>
+			<result name="update">/updatemroot.jsp</result>				
+		</action>
+		<action name="*Efavorites" class="efavoritesAction"	method="{1}">
+			<result name="list" type="redirectAction">listEfavorites.action</result>
+			<result name="listback">/member/listEfavorites.jsp</result>		
+		</action>				
+</package>
+</struts>    

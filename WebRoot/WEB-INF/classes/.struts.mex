@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="main" location="0,0" size="0,0">
+    <action name="*Eauser" location="0,0" size="0,0">
+      <result name="succ">
+        <resourceEdge source="succ" routing="0" target="succ.jsp" />
+      </result>
+      <result name="findList">
+        <resourceEdge source="findList" routing="0" target="listEauser.jsp" />
+      </result>
+      <result name="add" />
+      <result name="atype" />
+      <result name="delete" />
+      <result name="initEdit">
+        <resourceEdge source="initEdit" routing="0" target="editEauser.jsp" />
+      </result>
+      <result name="edit" />
+      <result name="initChangeApass">
+        <resourceEdge source="initChangeApass" routing="0" target="changeApass.jsp" />
+      </result>
+      <result name="changeApass" />
+    </action>
+    <action name="*Eagrouptype" location="0,0" size="0,0">
+      <result name="findList">
+        <resourceEdge source="findList" routing="0" target="addEauser.jsp" />
+      </result>
+    </action>
+    <action name="*Tree" location="0,0" size="0,0" />
+    <action name="*Ealog" location="0,0" size="0,0">
+      <result name="list" />
+      <result name="listback">
+        <resourceEdge source="listback" routing="0" target="listTbpaper.jsp" />
+      </result>
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="updateTbpaper.jsp" />
+      </result>
+    </action>
+    <action name="*Emroot" location="0,0" size="0,0">
+      <result name="list" />
+      <result name="listback">
+        <resourceEdge source="listback" routing="0" target="listmroot.jsp" />
+      </result>
+      <result name="edit">
+        <resourceEdge source="edit" routing="0" target="mrootedit.jsp" />
+      </result>
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="listmroot.jsp" />
+      </result>
+    </action>
+    <action name="*Efavorites" location="0,0" size="0,0">
+      <result name="list" />
+      <result name="listback">
+        <resourceEdge source="listback" routing="0" target="listEfavorites.jsp" />
+      </result>
+      <result name="index">
+        <resourceEdge source="index" routing="0" target="index.jsp" />
+      </result>
+    </action>
+    <action name="*Emsub" location="0,0" size="0,0">
+      <result name="showadd">
+        <resourceEdge source="showadd" routing="0" target="msubadd.jsp" />
+      </result>
+      <result name="listback" />
+      <result name="edit">
+        <resourceEdge source="edit" routing="0" target="msubedit.jsp" />
+      </result>
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="listmroot.jsp" />
+      </result>
+    </action>
+    <action name="*Emodel" location="0,0" size="0,0">
+      <result name="add">
+        <resourceEdge source="add" routing="0" target="modeladd.jsp" />
+      </result>
+      <result name="list" />
+      <result name="listback">
+        <resourceEdge source="listback" routing="0" target="listmodel.jsp" />
+      </result>
+      <result name="edit">
+        <resourceEdge source="edit" routing="0" target="modeledit.jsp" />
+      </result>
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="listmodel.jsp" />
+      </result>
+    </action>
+    <action name="*Ejobs" location="0,0" size="0,0">
+      <result name="findList">
+        <resourceEdge source="findList" routing="0" target="listEjobs.jsp" />
+      </result>
+      <result name="add" />
+      <result name="delete" />
+      <result name="initEdit">
+        <resourceEdge source="initEdit" routing="0" target="editEjobs.jsp" />
+      </result>
+      <result name="edit" />
+      <result name="details">
+        <resourceEdge source="details" routing="0" target="ejobsDetails.jsp" />
+      </result>
+      <result name="jdisplay" />
+    </action>
+    <action name="*Etalent" location="0,0" size="0,0">
+      <result name="delete">
+        <resourceEdge source="delete" routing="0" target="ejobsDetails.jsp" />
+      </result>
+      <result name="details">
+        <resourceEdge source="details" routing="0" target="etalentDetails.jsp" />
+      </result>
+    </action>
+    <action name="*Eadzone" location="0,0" size="0,0">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="listEadzone.jsp" />
+      </result>
+      <result name="findAddEad">
+        <resourceEdge source="findAddEad" routing="0" target="addEadzone.jsp" />
+      </result>
+      <result name="initEdit">
+        <resourceEdge source="initEdit" routing="0" target="editEadzone.jsp" />
+      </result>
+    </action>
+    <action name="*Ead" location="0,0" size="0,0" />
+  </package>
+  <webResource name="listTbpaper.jsp" path="/listTbpaper.jsp" location="0,0" size="0,0" />
+  <webResource name="updateTbpaper.jsp" path="/updateTbpaper.jsp" location="0,0" size="0,0" />
+  <webResource name="succ.jsp" path="/ewssite/succ.jsp" location="0,0" size="0,0" />
+  <webResource name="addmroot.jsp" path="/ewssite/system/addmroot.jsp" location="0,0" size="0,0" />
+  <webResource name="listmroot.jsp" path="/ewssite/system/listmroot.jsp" location="0,0" size="0,0" />
+  <webResource name="updatemroot.jsp" path="/updatemroot.jsp" location="0,0" size="0,0" />
+  <webResource name="listEfavorites.jsp" path="/member/listEfavorites.jsp" location="0,0" size="0,0" />
+  <webResource name="index.jsp" path="/ewssite/index.jsp" location="0,0" size="0,0" />
+  <webResource name="addsub.jsp" path="/ewssite/system/addsub.jsp" location="0,0" size="0,0" />
+  <webResource name="listmsub.jsp" path="/ewssite/system/listmsub.jsp" location="0,0" size="0,0" />
+  <webResource name="updatemsub.jsp" path="/updatemsub.jsp" location="0,0" size="0,0" />
+  <webResource name="addmodel.jsp" path="/ewssite/system/addmodel.jsp" location="0,0" size="0,0" />
+  <webResource name="listmodel.jsp" path="/ewssite/system/listmodel.jsp" location="0,0" size="0,0" />
+  <webResource name="updatemodel.jsp" path="/updatemodel.jsp" location="0,0" size="0,0" />
+  <webResource name="mrootedit.jsp" path="/ewssite/system/mrootedit.jsp" location="0,0" size="0,0" />
+  <webResource name="msubadd.jsp" path="/ewssite/system/msubadd.jsp" location="0,0" size="0,0" />
+  <webResource name="msubedit.jsp" path="/ewssite/system/msubedit.jsp" location="0,0" size="0,0" />
+  <webResource name="listEauser.jsp" path="/ewssite/system/listEauser.jsp" location="0,0" size="0,0" />
+  <webResource name="editEauser.jsp" path="/ewssite/system/editEauser.jsp" location="0,0" size="0,0" />
+  <webResource name="changeApass.jsp" path="/ewssite/system/changeApass.jsp" location="0,0" size="0,0" />
+  <webResource name="addEauser.jsp" path="/ewssite/system/addEauser.jsp" location="0,0" size="0,0" />
+  <webResource name="modeladd.jsp" path="/ewssite/system/modeladd.jsp" location="0,0" size="0,0" />
+  <webResource name="modeledit.jsp" path="/ewssite/system/modeledit.jsp" location="0,0" size="0,0" />
+  <webResource name="listEjobs.jsp" path="/ewssite/model/job/listEjobs.jsp" location="0,0" size="0,0" />
+  <webResource name="editEjobs.jsp" path="/ewssite/model/job/editEjobs.jsp" location="0,0" size="0,0" />
+  <webResource name="ejobsDetails.jsp" path="/ewssite/model/job/ejobsDetails.jsp" location="0,0" size="0,0" />
+  <webResource name="etalentDetails.jsp" path="/ewssite/model/job/etalentDetails.jsp" location="0,0" size="0,0" />
+  <webResource name="listEadzone.jsp" path="/ad/listEadzone.jsp" location="0,0" size="0,0" />
+  <webResource name="addEadzone.jsp" path="/ad/addEadzone.jsp" location="0,0" size="0,0" />
+  <webResource name="editEadzone.jsp" path="/ad/editEadzone.jsp" location="0,0" size="0,0" />
+  <webResource name="index.jsp" path="/member/index.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

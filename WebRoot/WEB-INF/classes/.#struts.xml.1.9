@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="main" extends="struts-default">
+		<action name="*Eauser" class="eauserAction"	method="{1}">		
+			<result name="succ">/ewssite/succ.jsp</result>								
+		</action>
+		<action name="*Tree" class="treeAction"	method="{1}">	
+		</action>	
+		<action name="*Ealog" class="ealogAction"	method="{1}">		
+			<result name="list" type="redirectAction">listTbpaper.aspx</result>
+			<result name="listback">/listTbpaper.jsp</result>
+			<result name="update">/updateTbpaper.jsp</result>				
+		</action>
+		<action name="*Emroot" class="emrootAction"	method="{1}">		
+			<result name="list" type="redirectAction">listEmroot.aspx</result>
+			<result name="listback">/ewssite/system/listmroot.jsp</result>
+			<result name="edit">/ewssite/system/mrootedit.jsp</result>
+			<result name="update">/ewssite/system/listmroot.jsp</result>	
+		</action>
+		<action name="*Efavorites" class="efavoritesAction"	method="{1}">
+			<result name="list" type="redirectAction">listEfavorites.aspx</result>
+			<result name="listback">/member/listEfavorites.jsp</result>		
+		</action>				
+		<action name="*Emsub" class="emsubAction"	method="{1}">		
+			<result name="showadd">/ewssite/system/msubadd.jsp</result>
+			<result name="listback" type="redirectAction">listEmroot.aspx</result>
+			<result name="edit">/ewssite/system/msubedit.jsp</result>
+			<result name="update">/ewssite/system/listmroot.jsp</result>				
+		</action>
+		<action name="*Emodel" class="emodelAction"	method="{1}">		
+			<result name="add">/ewssite/system/addmodel.jsp</result>
+			<result name="list" type="redirectAction">listEmodel.aspx</result>
+			<result name="listback">/ewssite/system/listmodel.jsp</result>
+			<result name="update">/updatemodel.jsp</result>				
+		</action>	
+</package>
+<constant name="struts.action.extension" value="aspx"></constant>
+</struts>    
